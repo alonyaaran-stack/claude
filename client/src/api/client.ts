@@ -1,8 +1,6 @@
 import type { Creative, SummaryData, ApiResponse, DateRange } from '../types';
 
 class ApiClient {
-  private baseUrl = '';
-
   private async request<T>(endpoint: string, params?: Record<string, string>): Promise<T> {
     const url = new URL(endpoint, window.location.origin);
     if (params) {

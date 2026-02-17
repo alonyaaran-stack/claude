@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 export function ComparisonPage() {
   const { dateRange } = useDateRange();
-  const { creatives, loading } = useCreatives(dateRange);
+  const { creatives } = useCreatives(dateRange);
   const { selectedIds, clearComparison } = useComparison();
   const navigate = useNavigate();
 
